@@ -1,5 +1,6 @@
 import userData from "../json/task1.json";
 import Profile from "./task1/Profile/Profile";
+import FriendsList from "./task2/FriendsList/FriendsList";
 
 import style from "./App.module.css";
 
@@ -14,6 +15,9 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <h1 className={style.title}>Task №2</h1>
+      <FriendsList />
+      <h1 className={style.title}>Task №3</h1>
     </>
   );
 }
