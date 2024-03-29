@@ -1,0 +1,15 @@
+.userName {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.userTag {
+  color: #808080;
+  margin-bottom: 3px;
+}
+
+.userLocation {
+  color: #808080;
+}

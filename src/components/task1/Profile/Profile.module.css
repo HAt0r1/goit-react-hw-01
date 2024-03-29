@@ -1,0 +1,15 @@
+.container {
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0px;
+}
