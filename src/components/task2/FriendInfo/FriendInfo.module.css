@@ -1,0 +1,20 @@
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.friendStatus {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.online {
+  composes: friendStatus;
+  color: #05be05;
+}
+
+.offline {
+  composes: friendStatus;
+  color: #ff0000;
+}

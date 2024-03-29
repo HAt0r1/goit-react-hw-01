@@ -1,0 +1,13 @@
+.listItem {
+  width: ((100% - 56px)/5);
+}
+
+.friendContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid #000000;
+  padding: 20px;
+}
