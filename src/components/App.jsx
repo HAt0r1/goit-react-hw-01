@@ -3,6 +3,7 @@ import FriendsList from "./task2/FriendsList/FriendsList";
 import TransactionHistory from "./task 3/TransactionHistory/TransactionHistory";
 
 import userData from "../json/task1.json";
+import friends from "../json/task2.json";
 import transactions from "../json/task3.json";
 
 import style from "./App.module.css";
@@ -19,7 +20,7 @@ export default function App() {
         stats={userData.stats}
       />
       <h1 className={style.title}>Task №2</h1>
-      <FriendsList />
+      <FriendsList friends={friends} />
       <h1 className={style.title}>Task №3</h1>
       <TransactionHistory items={transactions} />
     </>

@@ -3,10 +3,10 @@ import FriendInfo from "../FriendInfo/FriendInfo";
 
 import style from "./FriendListItem.module.css";
 
-const FriendsListItem = ({ friends }) => {
+const FriendsListItem = ({ data }) => {
   return (
     <>
-      {friends.map(({ id, avatar, name, isOnline }) => {
+      {data.map(({ id, avatar, name, isOnline }) => {
         return (
           <li className={style.listItem} key={id}>
             <div className={style.friendContainer}>

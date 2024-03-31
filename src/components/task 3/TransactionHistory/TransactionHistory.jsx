@@ -1,4 +1,3 @@
-import TransactionItem from "../TransactionItem/TransactionItem";
 import style from "./TransactionHistory.module.css";
 
 const TransactionHistory = ({ items }) => {
@@ -12,7 +11,15 @@ const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        <TransactionItem info={items} />
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr className={style.rowContainer} key={id}>
+              <td className={style.dataContainer}>{type}</td>
+              <td className={style.dataContainer}>{amount}</td>
+              <td className={style.dataContainer}>{currency}</td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
